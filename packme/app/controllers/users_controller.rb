@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 		@user = User.where(username: params[:username]).take
 		if @user != nil && @user.password_valid?(params[:password]) then
 			session[:username] = params[:username]
-			url = url_for(controller: 'trips', action: 'new', only_path: true)
+			url = url_for(controller: 'trips', action: 'index', only_path: true)
 			redirect_to url
 		else
 			flash[:notice] = "Sorry, the user \"" + params[:username] + "\" does not exist, or the passsword was incorrect. Try again?"
