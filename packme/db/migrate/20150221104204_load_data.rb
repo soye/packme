@@ -1,4 +1,4 @@
-class LoadData < ActiveRecord::Migration
+sclass LoadData < ActiveRecord::Migration
   def change
     # Create initial users.
 
