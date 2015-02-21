@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 # Enable ActiveRecord session store
 gem 'activerecord-session_store'
 
+gem 'tzinfo-data'
