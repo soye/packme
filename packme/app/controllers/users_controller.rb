@@ -2,6 +2,8 @@ class UsersController < ApplicationController
 	def new
 		
 	end
-	def signin
+
+	def login
+		
 	end
 end
