@@ -5,6 +5,8 @@ class CreateItems < ActiveRecord::Migration
     	t.boolean :is_packed
     	t.boolean :is_returned
     	t.integer :quantity
+    	t.integer :user_id
+    	t.integer :trip_id
       t.timestamps
     end
   end

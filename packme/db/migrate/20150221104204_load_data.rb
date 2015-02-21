@@ -1,6 +1,5 @@
 class LoadData < ActiveRecord::Migration
-  def up
-  	down
+  def change
     # Create initial users.
 
     sy = User.new(:username => "soye", :password => "sophie")
@@ -47,12 +46,6 @@ class LoadData < ActiveRecord::Migration
     item3.user = sy
     item3.trip = trip1
     item3.save(:validate => false)
-
-  end
-  def down
-  	Item.delete_all
-  	Trip.delete_all
-  	User.delete_all
   end
 
 end
