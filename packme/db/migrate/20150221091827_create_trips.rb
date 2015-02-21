@@ -4,6 +4,7 @@ class CreateTrips < ActiveRecord::Migration
     	t.string :location
     	t.datetime :leave_date
     	t.datetime :return_date
+    	t.integer :user_id
       t.timestamps
     end
   end

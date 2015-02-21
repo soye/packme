@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221094224) do
+ActiveRecord::Schema.define(version: 20150221104204) do
 
   create_table "items", force: true do |t|
     t.string   "name"
     t.boolean  "is_packed"
     t.boolean  "is_returned"
     t.integer  "quantity"
+    t.integer  "user_id"
+    t.integer  "trip_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150221094224) do
     t.string   "location"
     t.datetime "leave_date"
     t.datetime "return_date"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
